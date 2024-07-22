@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-
+'''
+Log Parsing” the knowledge of Python programming is applied,
+focusing on parsing and processing data streams in real-time.
+This project involves reading from standard input (stdin),
+handling data in a specific format, 
+and performing calculations based on the input data.
+'''
 import sys
 
 def parse_line(line):
+    '''Line by line parse'''
     try:
         _, _, request, status_code, file_size = line.split('"')
         status_code = int(status_code.split()[0])
@@ -12,6 +19,7 @@ def parse_line(line):
         return None, None
 
 def main():
+    ''' Main Program'''
     total_size = 0
     status_counts = {200: 0, 301: 0, 400: 0, 401: 0, 403: 0, 404: 0, 405: 0, 500: 0}
     line_count = 0
