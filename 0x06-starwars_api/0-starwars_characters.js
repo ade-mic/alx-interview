@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const axios = require('axios').default;
 
 async function getStarWars (movieId) {
