@@ -4,6 +4,7 @@ a function of pascal triangle with n integer.It returns a list
 of integers representing the Pascal's triangle of n
 '''
 
+
 def factorial(n):
     """
     Calculates the factorial of a non-negative integer n.
@@ -20,6 +21,7 @@ def factorial(n):
         # Recursive step: n! = n * (n-1)!
         return n * factorial(n - 1)
 
+
 def pascal_triangle(n):
     """
     a function that returns a pascal tiangle of n
@@ -34,10 +36,11 @@ def pascal_triangle(n):
     triangle = []
     # return empty list if n <= 0
     if n <= 0:
-            return triangle
+        return triangle
     for row in range(n):
         li = []
         for i in range(0, row):
-            li.append(int(factorial(row) / (factorial(i) * (factorial(row - i)))))
+            li.append(int(factorial(row) / (
+                factorial(i) * (factorial(row - i)))))
         triangle.append(li + [1])
     return triangle
