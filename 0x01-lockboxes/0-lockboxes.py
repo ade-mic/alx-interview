@@ -1,19 +1,23 @@
 #!/usr/bin/python3
 """
     Determines if all boxes can be opened.
-    
+
     Parameters:
-    boxes (list of lists): Each index represents a box and contains a list of keys.
-    
+    boxes (list of lists): Each index represents
+    a box and contains a list of keys.
+
     Returns:
     bool:
 """
+
+
 def canUnlockAll(boxes):
     """
     Determines if all boxes can be opened.
 
     Parameters:
-    boxes (list of lists): Each index represents a box and contains a list of keys.
+    boxes (list of lists): Each index represents
+    a box and contains a list of keys.
 
     Returns:
     bool: True if all boxes can be opened, else False.
