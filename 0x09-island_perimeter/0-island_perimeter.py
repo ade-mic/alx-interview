@@ -15,6 +15,7 @@ The island doesn’t have “lakes”
 (water inside that isn’t connected to the water surrounding the island).
 """
 
+
 def island_perimeter(grid):
     """
     Returns the perimeter of the island describe in grid
