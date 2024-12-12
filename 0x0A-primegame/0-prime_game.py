@@ -36,7 +36,6 @@ Ben wins because there are no prime numbers for Maria to choose
 """
 
 
-
 def sieve_of_eratosthenes(max_n):
     """
     Helper function to generate primes up to the maximum number in nums
@@ -48,6 +47,7 @@ def sieve_of_eratosthenes(max_n):
             for multiple in range(p * p, max_n + 1, p):
                 primes[multiple] = False
     return primes
+
 
 def isWinner(x, nums):
     """
@@ -68,8 +68,8 @@ def isWinner(x, nums):
     # count the number of primes up to each number
     prime_counts = [0] * (max_n + 1)
     for i in range(1, max_n + 1):
-        prime_counts[i] = prime_counts[i -1] + (1 if primes[i] else 0)
-     
+        prime_counts[i] = prime_counts[i - 1] + (1 if primes[i] else 0)
+
     maria_wins = 0
     ben_wins = 0
     player2 = "Ben"
